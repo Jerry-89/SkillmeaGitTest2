@@ -1,16 +1,17 @@
+import java.util.Scanner; // <- toto si pridal
 public class Main {
     public static void main(String[] args) {
-    //Toto je komentar
 
-        String pozdrav = "Hello world";
-        System.out.println (pozdrav);
 
-        int prveCislo = 5;
-        int druheCislo = 10;
+                //komentar
+                int aktRok = 2025;
 
-        System.out.println (prveCislo+druheCislo);
-        System.out.println (prveCislo-druheCislo);
-        System.out.println (prveCislo*druheCislo);
-        System.out.println (prveCislo/druheCislo);
+                Scanner mujScanner = new Scanner(System.in);
+
+                System.out.println("Zadaj svoj rok narodenia: ");
+                int rokNar = mujScanner.nextInt();
+
+                int vek = aktRok - rokNar;
+                System.out.println("Tvoj vek je " + vek);
+        }
     }
-}
