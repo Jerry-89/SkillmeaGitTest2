@@ -5,5 +5,12 @@ public class Main {
         String pozdrav = "Hello world";
         System.out.println (pozdrav);
 
+        int prveCislo = 5;
+        int druheCislo = 10;
+
+        System.out.println (prveCislo+druheCislo);
+        System.out.println (prveCislo-druheCislo);
+        System.out.println (prveCislo*druheCislo);
+        System.out.println (prveCislo/druheCislo);
     }
 }
