@@ -99,7 +99,7 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
  */
 
         //po napisani cisla dna v tyzdni napise jeho nazov - trening na switch
-        Scanner sc = new Scanner(System.in);
+       /* Scanner sc = new Scanner(System.in);
         int cisloDna;
         System.out.println("Zadaj cislo dna v tyzdni");
         cisloDna = sc.nextInt();
@@ -145,8 +145,36 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
                 break;
 
         }
+*/
+        //Pole
+       /*int [] znamky = new int[5];
+        znamky[0] = 3;
+        znamky[1] = 4;
+        znamky[2] = 5;
+        znamky[3] = 1;
+        znamky[4] = 1;
+
+        int[] znamky2 = new int[] {3, 4, 5, 1, 1};
+
+        System.out.println(znamky[2] + 1);
+        */
+
+       /* String[] mena = new String[] {"Jan", "Peter", "Jozef", "Eva"};
+        mena[0]= "Peter";
+        System.out.println(mena[0]);
 
 
+        int [][] pole2D = new int [10][10];
+        pole2D[0][0] = 464;
+        pole2D[0][1] = -92;
+        System.out.println(pole2D[0][2]);
+        */
+
+        //smycky
+        for (int i=1; i<8; i++) {
+            System.out.println("Ahoj" + i);
+
+        }
 
     }
 }
