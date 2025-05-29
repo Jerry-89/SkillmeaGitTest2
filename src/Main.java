@@ -36,15 +36,20 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         System.out.println("Zadaj svoj vek");
         vek = mujScanner.nextInt();
 
-        if(vek >= 18) {
+        if (vek >= 18 ) {
             System.out.println("Si dospely");
-        }
-        else if(vek >= 0 && vek < 18) {
-                System.out.println("Uzivatel je nezletily");
+            if (vek >= 65) {
+                System.out.println("Dochodca");
             }
+        }
+
+        else if (vek >= 0 && vek < 18) {
+            System.out.println("Uzivatel je nezletily");
+        }
+
         else {
             System.out.println("Nesmie byt zaporne");
-            }
+        }
 
 
 
