@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -53,7 +54,7 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
 */
 
         // Zadanie ulohy: VYpocet BMI: Hmotnost (kg)/vyska na druhu (cm), pod 18,5 podvaha, medzi 18,5-25 optimalna vaha, 25-nekonecno nadvaha
-        Scanner mujScanner = new Scanner(System.in);
+      /*  Scanner mujScanner = new Scanner(System.in);
 
         float vyska;
         int hmotnost;
@@ -74,6 +75,60 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
             System.out.println("Uzivatel ma nadvahu");
         } else {
             System.out.println("Tvoje bmi je " + bmi);
+        }
+        */
+
+       // parne cislo vyhrava, neparne prehrava
+/*
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Kockou hodis stlacenim Enter");
+        mujScanner.nextLine();
+
+        int hodeneCislo;
+        Random rand = new Random();
+        hodeneCislo = rand.nextInt(1,7);
+        System.out.println("Vyhrava cislo " + hodeneCislo);
+
+        if (hodeneCislo % 2 == 0) {
+            System.out.println("Cislo je parne");
+        }
+        else if (hodeneCislo % 2 == 1) {
+            System.out.println("Cislo je neparne");
+        }
+
+ */
+
+        //po napisani cisla dna v tyzdni napise jeho nazov - trening na switch
+        Scanner sc = new Scanner(System.in);
+        int cisloDna;
+        System.out.println("Zadaj cislo dna v tyzdni");
+        cisloDna = sc.nextInt();
+
+        switch (cisloDna) {
+            case 1:
+                System.out.println("Je pondelok");
+                        break;
+            case 2:
+                    System.out.println("Je utorok");
+                        break;
+            case 3:
+                    System.out.println("Je streda");
+                        break;
+            case 4:
+                    System.out.println("Je štvrtok");
+                        break;
+            case 5:
+                    System.out.println("Je piatok");
+                        break;
+            case 6:
+                    System.out.println("Je sobota");
+                        break;
+            case 7:
+                    System.out.println("Je nedeľa");
+                        break;
+            default:
+                System.out.println("Neplatny den");
+
         }
     }
 }
