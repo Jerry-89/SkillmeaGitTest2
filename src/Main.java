@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -11,12 +12,34 @@ public class Main {
         int rokNar = mujScanner.nextInt();
 
         int vek = aktRok - rokNar;
-        if (rokNar <= aktRok) {
+        if ((rokNar <= aktRok) && (vek < 100)){
             System.out.println("Tvoj vek je " + vek);
         } else
-*/
-                    System.out.println("Nespravny vek");
+            System.out.println("Nespravny vek");/*
+|| Alt+124
+ */
+
+
      /*   Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadaj svoj email: ");
         String email = mujScanner.nextLine();
-        System.out.println(email.toLowerCase()); */
+        System.out.println(email.toLowerCase());
+
+int cisloPor = 1;
+
+System.out.println(cisloPor > 0 && cisloPor <= 4);
+ */
+
+
+        int vek;
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadaj svoj vek");
+        vek = mujScanner.nextInt();
+
+        if(vek >= 18) {
+            System.out.println("Si dospely");
+        }
+
+
+        }
+    }
