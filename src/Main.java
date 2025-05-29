@@ -30,7 +30,7 @@ int cisloPor = 1;
 System.out.println(cisloPor > 0 && cisloPor <= 4);
  */
 
-
+/*
         int vek;
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadaj svoj vek");
@@ -50,8 +50,30 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         else {
             System.out.println("Nesmie byt zaporne");
         }
+*/
 
+        // Zadanie ulohy: VYpocet BMI: Hmotnost (kg)/vyska na druhu (cm), pod 18,5 podvaha, medzi 18,5-25 optimalna vaha, 25-nekonecno nadvaha
+        Scanner mujScanner = new Scanner(System.in);
 
+        float vyska;
+        int hmotnost;
+        float bmi;
 
+        System.out.print("Zadaj výšku (m)");
+        vyska = mujScanner.nextFloat();
+        System.out.print("Zadaj hmotnost ");
+        hmotnost = mujScanner.nextInt();
+
+        bmi = hmotnost / (vyska * vyska);
+
+        if (bmi < 18.5f && bmi > 0) {
+            System.out.println("Uzivatel ma podvahu");
+        } else if (bmi >= 18.5f && bmi < 25) {
+            System.out.println("Uzivatel ma optimalnu vahu");
+        } else if (bmi >= 25) {
+            System.out.println("Uzivatel ma nadvahu");
+        } else {
+            System.out.println("Tvoje bmi je " + bmi);
         }
     }
+}
