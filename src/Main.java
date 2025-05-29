@@ -130,5 +130,23 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
                 System.out.println("Neplatny den");
 
         }
+
+        switch (cisloDna) {
+            case 6:
+            case 7:
+                System.out.println("Je vikend");
+                break;
+            case 5:
+            case 4:
+            case 3:
+            case 2:
+            case 1:
+                System.out.println("Je tyzden");
+                break;
+
+        }
+
+
+
     }
 }
