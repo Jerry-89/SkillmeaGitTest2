@@ -171,14 +171,14 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         */
 
         //smycky - for
-
+/*
         String[] mena = new String[]{"Janka", "Miška", "Gabika", "Jozef"};
         for (int i = 0; i < 3; i++) {
             System.out.println(mena[i]);
 
         }
 
-
+ */
         //smycky foreach
 /*
         for (String meno : mena) {
@@ -194,13 +194,33 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         }
 
   */
-        //do..while - prikaz zbehne minimalne 1 krat
-        int riadacaPremenna = 0;
+        //do..while - prikaz zbehne minimalne 1 krat, spyta sa az na konci
+ /*       int riadacaPremenna = 0;
         do {
             System.out.println(riadacaPremenna);
             riadacaPremenna++;
         } while (riadacaPremenna < 5);
+  */
 
+        //hadzanie kockou az dokedy nezastavis
+        int hozeneCislo;
+        Random nahodnyGenerator = new Random();
 
+        boolean riadiacaPremenna = true;
+        do {
+        System.out.println("Pro hozeni kostkou stiskni enter");
+        Scanner mujScanner = new Scanner(System.in);
+        mujScanner.nextLine();
+
+        hozeneCislo = nahodnyGenerator.nextInt(1, 7);
+        System.out.println("Hozene cislo je: " + hozeneCislo);
+
+        if(hozeneCislo % 2 == 1) {
+            System.out.println("Licha - Vyhravas!");
+        }
+        else {
+            System.out.println("Suda - Prohravas");
+        }
+        } while(riadiacaPremenna);
     }
 }
