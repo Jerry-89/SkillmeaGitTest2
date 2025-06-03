@@ -187,12 +187,19 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
 
  */
         //while
-        int premenna = 0;
+ /*       int premenna = 0;
         while (premenna <= 5) {
             System.out.println(premenna);
             premenna++;
         }
 
+  */
+        //do..while - prikaz zbehne minimalne 1 krat
+        int riadacaPremenna = 0;
+        do {
+            System.out.println(riadacaPremenna);
+            riadacaPremenna++;
+        } while (riadacaPremenna < 5);
 
 
     }
