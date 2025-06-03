@@ -203,24 +203,33 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
   */
 
         //hadzanie kockou az dokedy nezastavis
-        int hozeneCislo;
+/*        int hozeneCislo;
+        String koniec;
         Random nahodnyGenerator = new Random();
 
         boolean riadiacaPremenna = true;
         do {
-        System.out.println("Pro hozeni kostkou stiskni enter");
-        Scanner mujScanner = new Scanner(System.in);
-        mujScanner.nextLine();
+            System.out.println("Pro hozeni kostkou stiskni enter");
+            Scanner mujScanner = new Scanner(System.in);
+            mujScanner.nextLine();
 
-        hozeneCislo = nahodnyGenerator.nextInt(1, 7);
-        System.out.println("Hozene cislo je: " + hozeneCislo);
+            hozeneCislo = nahodnyGenerator.nextInt(1, 7);
+            System.out.println("Hozene cislo je: " + hozeneCislo);
 
-        if(hozeneCislo % 2 == 1) {
-            System.out.println("Licha - Vyhravas!");
-        }
-        else {
-            System.out.println("Suda - Prohravas");
-        }
-        } while(riadiacaPremenna);
+            if (hozeneCislo % 2 == 1) {
+                System.out.println("Licha - Vyhravas!");
+            } else {
+                System.out.println("Suda - Prohravas");
+            }
+
+            System.out.println("Ukončiť hru? Napíš pismeno q");
+            koniec = mujScanner.nextLine();
+            if (koniec.equals("q")) {
+                riadiacaPremenna = false;
+            }
+        } while (riadiacaPremenna);
+
+ */
+
     }
 }
