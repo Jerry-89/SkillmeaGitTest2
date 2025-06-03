@@ -78,7 +78,7 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         }
         */
 
-       // parne cislo vyhrava, neparne prehrava
+        // parne cislo vyhrava, neparne prehrava
 /*
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Kockou hodis stlacenim Enter");
@@ -170,11 +170,30 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         System.out.println(pole2D[0][2]);
         */
 
-        //smycky
-        for (int i=1; i<8; i++) {
-            System.out.println("Ahoj" + i);
+        //smycky - for
+
+        String[] mena = new String[]{"Janka", "Miška", "Gabika", "Jozef"};
+        for (int i = 0; i < 3; i++) {
+            System.out.println(mena[i]);
 
         }
+
+
+        //smycky foreach
+/*
+        for (String meno : mena) {
+            System.out.println(meno);
+        }
+
+ */
+        //while
+        int premenna = 0;
+        while (premenna <= 5) {
+            System.out.println(premenna);
+            premenna++;
+        }
+
+
 
     }
 }
