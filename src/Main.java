@@ -230,6 +230,32 @@ System.out.println(cisloPor > 0 && cisloPor <= 4);
         } while (riadiacaPremenna);
 
  */
+Scanner sc = new Scanner(System.in);
+Random rand = new Random();
+int skoreHrac1 = 0; // pociatocna hodnota 0
+int skoreKrupier = 0; // pociatocna hodnota 0
+int karta;
+String uzivatelVstup;
 
+do {
+    karta = rand.nextInt(1, 14); //tu vyberie kartu od 1 do 13
+    skoreHrac1 = skoreHrac1 + karta;
+    System.out.println("Vytiahol si kartu " + karta);
+    System.out.println("Tvoje skore je " + skoreHrac1);
+
+    if (skoreHrac1 > 21) {
+        System.out.println("Game over");
+        break;
+    }
+
+    System.out.println("Ak chces dalsiu kartu stlac d");
+    System.out.println("Ak nie stlac q");
+    uzivatelVstup = sc.nextLine();
+
+    if (uzivatelVstup.equals("d")) { //ak tu zadas pismeno "d" hras dalej
+        continue;
+    }
+    else if (uzivatelVstup.equals("q")) {}
+} while(true);
     }
 }
